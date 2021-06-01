@@ -1,0 +1,12 @@
+.main-block {
+    margin: 0 auto;
+    width: 500px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.content {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
