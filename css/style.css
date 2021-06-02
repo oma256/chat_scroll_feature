@@ -6,23 +6,81 @@
 }
 
 .content {
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 90vh;
+    height: 80vh;
     overflow: auto;
     display: flex;
+    padding: 7px;
     flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: white;
+    padding-bottom: 5px;
+    background-image: url("../img/4c1674dab80c03bf57d5a14df79deb62.jpeg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.usernames-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: blanchedalmond;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #009dc4;
 }
 
 .chat-item {
+    display: block;
+    background-color: #009dc4;
     margin: 5px 0 0 5px;
+    color: white;
+    border-radius: 10px 10px 10px 0;
+    margin-right: auto;
+    padding: 3px 6px 3px 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 13px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-block {
+    border-radius: 0 0 5px 5px;
+    height: 5vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: white;
 }
 
 .chat-item.me {
     margin-left: auto;
+    margin-right: 5px;
+    border-radius: 10px 10px 0 10px;
+    background-color: 	#63a5f0;
 }
 
 .selected {
     background-color: #eaeaea;
 }
 
+.input-block textarea {
+    height: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 0 0 5px 5px;
+    color: #4b4b4b;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-block textarea::placeholder {
+    color: #979797;
+}
+
+.input-block textarea:focus {
+    outline-width: 0;
+}
