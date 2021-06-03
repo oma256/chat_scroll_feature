@@ -8,17 +8,17 @@ msgInput.onkeypress = (e) => {
     const code = (e.keyCode ? e.keyCode : e.which);
     
     if (code == 13) {
-        const inputMsg = e.target.value;
-        addMsgToContent(inputMsg);
+        addMsgToContent(e.target.value);
         clearMsgInput();
     }
 }
 
 const addMsgToContent = (msg) => {
-    let div = document.createElement('div');
+    const div = document.createElement('div');
+    
     div.innerHTML = msg;
-    div.classList.add('chat-item');
-    div.classList.add('me');
+    div.classList.add('chat-item', 'me');
+
     contentBlock.appendChild(div);
 }
 
