@@ -9,7 +9,7 @@ msgInput.onkeypress = (e) => {
     
     if (code == 13) {
         addMsgToContent(e.target.value);
-        clearMsgInput();
+        msgInput.value = '';
     }
 }
 
@@ -20,9 +20,4 @@ const addMsgToContent = (msg) => {
     div.classList.add('chat-item', 'me');
 
     contentBlock.appendChild(div);
-}
-
-const clearMsgInput = () => {
-    msgInput.value = '';
-    msgInput.blur();
 }
